@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <target name="compile">
+       <javac includeantruntime="false" srcdir="./src" destdir="staging"/>
+   </target>
+   <target name="run">
+        <java classname="DemoPackage.Demo">
+        	<classpath path="staging"/>
+        </java>	
+    </target>
+
+</project>
